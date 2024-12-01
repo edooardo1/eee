@@ -2,33 +2,49 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Макет</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-<header>
-  <nav class="menu"></nav>
-  <div class="logo"><img src=""></div>
-  <div class="help"><img src=""></div>
-  <div class="serch"><img src=""></div>
+<header class="header">
+  
+  <a class="header__menu" href="#"><nav><img src="img/menu.svg"></nav></a>
+  <a class="header__logo" href="#"><div><img src="img/logo.svg" alt="Логотип"></div></a>
+  <a class="header__call" href="#"><div><img src="img/call.svg"></div></a>
+  <a class="header__chat" href="#"><div><img src="img/chat.svg"></div></a>
+  <a class="header__profile" href="#"><div><img src="img/profile.svg"></div></a>
+  <a class="header__help" href="#"><div><img src="img/help.svg"></div></a>
+  <a class="header__serch" href="#"><div><img src="img/serch.svg"></div></a>
+  
 </header>
-<main>
-  <h1>Услуги сервиса</h1>
-  <ul>
-    <li>Ремонтируемые бренды</li>
-    <li>Ремонтируемые устройства</li>
-    <li>Цены на услуги</li>
-    <li>Адреса сервисных центров</li>
-    <li>Специальные цены</li>
+<main class="main">
+  <div class="main__mg">
+    <h1 class="main__mg__title">Услуги сервиса</h1>
+    <a class="main__mg__help" href="#"><div>Оставить заявку</div></a>
+    <a class="main__mg__serch" href="#"><div>Статус ремонта</div></a>
+  </div>
+  <ul class="main__services">
+    
+    <li class="main__services__option"><a href="#">Ремонтируемые бренды</a></li>
+    <li class="main__services__option"><a href="#">Ремонтируемые устройства</a></li>
+    <li class="main__services__option"><a href="#">Цены на услуги</a></li>
+    <li class="main__services__option"><a href="#">Адреса сервисных центров</a></li>
+    <li class="main__services__option"><a href="#">Специальные цены</a></li>
+    <li class="main__services__option"><a href="#">Отзывы</a></li>
+    
   </ul>
-  <article>
-    <section class="about">
-Мы являемся авторизованным сервисным центром по ремонту техники
-Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.<Fr>
-Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов.
-Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.
+  <article class="content">
+    <section class="content__about">
+      <p class="content__about__visible">Мы являемся авторизованным сервисным центром по ремонту техники
+Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</p>
+      <p class="content__about__hiden-1">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера</p><p class="content__about__hiden-2">, что подтверждает большое количество постоянных клиентов.
+Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+      <button class="content__about__more">Читать далее</button>
     </section>
-    <section class="illustration">
-    <img src="">
+    <section class="content__illustration">
+      
     </section>
   </article>
 </main>

@@ -1,1 +1,259 @@
+body {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: "TTLakes", serif;
+    color: #222222;
+    min-width: 320px;
+    max-width: 1120px;
+    height: 600px;
+}
 
+.header{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    border-bottom:solid #D9FFF5;
+}
+
+.header__menu{
+    display: flex;
+    align-self: center;
+    background-image: url(img/menu.svg);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;   
+}
+
+.header__call{
+    display: none;
+    align-self: center;
+    width: 40px;
+    height: 40px;
+}
+
+.header__chat{
+    display: none;
+    align-self: center;
+    width: 40px;
+    height: 40px;
+}
+
+.header__profile{
+    display: none;
+    align-self: center;
+    width: 40px;
+    height: 40px;
+}
+
+.header__logo{
+    display: flex;
+    width: 96.55px;
+    height: 50.81px;
+    align-self: center;
+}
+
+.header__help{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    top: 24px;
+    left: 208px;    
+    align-self: center;
+    background-image: url(img/help.svg);
+    border-left: solid rgba(234, 234, 234, 1);
+    border-width: 2px;
+}
+
+.header__serch{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    top: 24px;
+    left: 264px;  
+    align-self: center;
+    background-image: url(img/serch.svg);
+}
+
+.content__illustration{
+    background-image: url(img/illustration.png);
+    width: 320px;
+    height: 176px;
+}
+
+.main{
+    background-color: rgba(248, 248, 248, 1);
+}
+
+.main__mg{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.main__mg__help{
+    display: none;
+    height: 40px;
+    width: 165px;
+    top: 50px;
+    left: 716px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    align-self: center;
+    background-image: url(img/help.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.main__mg__serch{
+    display: none;
+    height: 40px;
+    width: 168px;
+    top: 42px;
+    left: 921px;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    align-self: center;
+    background-image: url(img/serch.svg);
+    background-repeat: no-repeat;
+    background-position: center right;
+}
+
+.main__mg__title{
+    font-size: 28px;
+    display: flex;
+    width: 288px;
+    height: 40px;
+    top: 112px;
+    left: 16px;
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-image: url(img/border.svg);
+    padding-left: 30px; 
+    align-items: center;
+    
+}
+
+
+
+.main__services {
+    height: 40px;
+    display: flex;
+    overflow-x: auto; 
+    white-space: nowrap;
+    position: relative;
+    padding-right: 30px;
+    padding-left: 30px;
+    font-size: 24px;
+    list-style-type: none;
+
+}
+
+.main__services a{
+    height: 38px;
+    text-decoration: none;
+    color: black;
+    padding-right: 10px;
+}
+
+.main__services__option:focus{
+    border: 2px solid rgb(42, 215, 169);
+}
+
+.main__services::after {
+    content: "";
+    position:absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 40px;
+    z-index: 1;
+    pointer-events: none;
+    width: 24px;
+    height: 40px; 
+    background: linear-gradient(to left, rgba(248, 248, 248, 1),rgba(248, 248, 248, 0.0001));
+}
+
+
+.content__about{
+    font-size: 14px;
+}
+
+.content__about__hiden-1, .content__about__hiden-2{
+    display: none;
+}
+
+.content__about__more{
+    font-size: 16px;
+    padding-left: 30px;
+    background-image: url(img/more.svg);
+    background-repeat: no-repeat ;
+    background-size: 16px 16px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 760px) {
+    .header{
+        display: grid;
+        grid-template-columns: repeat(7, auto);
+    }
+
+    .header__call{
+        display: flex;
+        top: 24px;
+        left: 454px;
+        margin-left: 150px;        
+    }
+
+    .header__chat{
+        display: flex;
+        width: 40px;
+        height: 40px;
+        top: 24px;
+        left: 510px;
+        
+    }
+
+    .header__profile{
+        display: flex;
+        top: 24px;
+        left: 566px;
+       
+    }
+
+    .header__help{
+        top: 24px;
+        left: 648px;
+    }
+
+    .header__serch{
+        top: 24px;
+        left: 704px;
+    }
+
+    .content__about__hiden-1{
+        display: flex;
+    }
+
+    .content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content__illustration{
+        align-items:end;
+    }
+}
+
+@media(min-width:1119px){
+    .header{
+        display: none;
+    }
+
+    .main__mg__help{
+        display: flex;
+    }
+
+    .main__mg__serch{
+        display: flex;
+    }
+}
