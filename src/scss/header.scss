@@ -1,0 +1,132 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:solid #D9FFF5;
+    justify-content: space-between;
+    height: 88px;
+    width: 100vw;
+    gap: 10px;
+  }
+  
+  
+  
+  .menu{
+      background-image: url(../img/menu.svg);
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 40px;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: 10px;    
+  }
+  
+  .call{
+      display: none;
+      justify-content: right;
+      width: 40px;
+      height: 40px;
+      background-image: url(../img/call.svg);
+      margin-top: auto;
+      margin-bottom: auto; 
+  }
+  
+  .chat{
+      display: none;
+      justify-content: right;
+      width: 40px;
+      height: 40px;
+      background-image: url(../img/chat.svg);
+      margin-top: auto;
+      margin-bottom: auto; 
+  }
+  
+  .profile{
+      display: none;
+      width: 40px;
+      height: 40px;
+      background-image: url(../img/profile.svg);
+      justify-content: right;
+      margin-top: auto;
+      margin-bottom: auto; 
+  }
+  
+  .logo{
+      width: 96.55px;  
+      margin-top: auto;
+      margin-bottom: auto;  
+      align-items: start;
+      margin-right: auto;
+  }
+  
+  .border{
+      width: 2px;
+      height: 32px;
+      margin-top: auto;
+      margin-bottom: auto; 
+      background-image: url(../img/border.svg);
+  }
+  
+  .first{
+      display: none;
+  }
+  
+  .help{
+      display: flex;
+      justify-content: end;
+      width: 40px;
+      height: 40px;
+      top: 24px;  
+      background-image: url(../img/help.svg);
+      margin-top: auto;
+      margin-bottom: auto; 
+  }
+  
+  
+  .serch{
+      display: flex;
+      width: 40px;
+      height: 40px; 
+      justify-content: end;  
+      background-image: url(../img/serch.svg);
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-right: 10px;    
+  }
+
+  @media (min-width: 760px) {
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .logo{
+        margin-right: auto;
+    }
+
+    .first{
+        display: flex;
+    }
+
+    .call{
+        display: flex;      
+    }
+
+    .chat{
+        display: flex;
+        width: 40px;
+        height: 40px;
+    }
+
+    .profile{
+        display: flex;
+    }
+  }
+
+  @media(min-width:1119px){
+    .header{
+        display: none;
+    }
+}
